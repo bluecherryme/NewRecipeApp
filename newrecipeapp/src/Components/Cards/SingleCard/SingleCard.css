@@ -1,0 +1,59 @@
+.underlay{
+    height: 250px;
+    width: 320px;
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgba(31,29,29,0.4);
+}
+
+.recipe-card{
+    height: 210px;
+    width: 280px;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    align-self: center;
+}
+
+.overlay-card{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    height: 90%;
+    width: 100%;
+    background-color: rgba(31,29,29,0.6);
+    text-align: center;
+    font-size: 18px;    
+    padding-top: 25px;
+}  
+
+.overlay-by-ingredients>p{
+    font-size: 16px;
+    line-height: 5px;
+}
+
+ .recipe-card:hover > .overlay-card{
+    display: inherit;
+} 
+
+.recipe-card:hover{
+    transform: scale(1.01,1.01);
+    transition: all 0.3s ease-in-out;
+}
+
+.smallOverlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding-top: 4px;
+    min-height: 40px;
+    width: 100%;
+    background-color: rgba(31,29,29,0.6);
+    text-align: center;
+    font-size: 18px;    
+}

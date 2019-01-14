@@ -1,0 +1,1 @@
+insert into shoppinglist(clientid,item) values($1,$2);

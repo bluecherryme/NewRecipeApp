@@ -1,0 +1,78 @@
+.home{
+    height: 100vh;
+    background-image: url('./../../img/background1.jpeg');
+    background-color: orange;
+    background-size: cover;
+    position:relative;
+    color: white;
+    background-attachment: fixed;
+}
+
+a{
+    color: white;
+    font-size: 25px;
+}
+
+.overlay{
+    background-color: rgba(31,29,29,0.5); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.heading{
+    margin-top:250px;
+    line-height: 0px;
+    }
+
+.heading2{
+    border: 1px solid white;
+    text-align:left;
+    width: 450px;
+    margin: auto;
+    padding: 25px;
+}
+
+.heading2>h4{
+    padding-left:30px;
+    margin-bottom:-10px;
+}
+
+.heading2>p{
+    padding-left:25px;
+    margin-top: -10px;
+}
+
+.arrow-down{
+    height:50px;
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    left: 50%;
+    margin-left:-25px;
+}
+
+.btn-log:hover{
+  color: #F96801;
+  border-color: #F96801;
+  transform: scale(1.1,1.1);
+}
+
+@media (max-width: 520px){
+    .home{
+        background-position: 10% 50%;
+    }
+    .cookH1{
+        font-size: 100px;
+    }
+    .heading2{
+        width: 80vw;
+        padding: 10px;
+    }
+    .heading2>p{
+        font-size: 14px;
+    }
+}
