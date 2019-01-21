@@ -30,7 +30,7 @@ export default class Video extends Component{
     }
    
     getVideo(e, searchTerm){
-    e ? e.preventDefault() : null;
+    //e ? e.preventDefault() : null;
     YTSearch({key: API_key_YT, term:searchTerm}, (videos) =>{
             this.setState({VideoList:videos});
             this.setCurrentVideo();
